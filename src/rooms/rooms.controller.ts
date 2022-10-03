@@ -16,7 +16,7 @@ export class RoomsController {
     return this.roomsService.getInfo();
   }
 
-  @Get()
+  @Post('/room')
   getAll(@Body() roomСomparison: RoomСomparison) {
     const roomInfo = this.roomsService.roomСomparison({ ...roomСomparison });
 
